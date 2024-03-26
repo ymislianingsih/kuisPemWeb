@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Gallery - YANA </title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+  }
+  .gallery-item {
+    margin: 10px;
+  }
+  .gallery-item img {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+  }
+  .caption {
+    margin-top: 10px;
+  }
+  .color-button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: palevioletred;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+</style>
+</head>
+
+<body>
+
+  <H1>Yuliana Mislianingsih</H1>
+  <h2>12250123497</h2>
+
+<div class="container">
+
+  <div class="gallery-item">
+    <img src="bunga1.jpg" alt="Gambar 1">
+    <div class="caption">ini bunga 1</div>
+    <button class="color-button" onclick="changeBackgroundColor('container', 'lightblue')">Klik untuk ubah warna bg</button>
+  </div>
+
+  <div class="gallery-item">
+    <img src="bunga2.jpg" alt="Gambar 2">
+    <div class="caption">ini bunga 2</div>
+    <button class="color-button" onclick="changeBackgroundColor('container', 'lightgreen')">Klik untuk ubah warna bg</button>
+  </div>
+
+  <div class="gallery-item">
+    <img src="bunga3.jpg" alt="Gambar 3">
+    <div class="caption">Ini bunga 3</div>
+    <button class="color-button" onclick="changeBackgroundColor('container', 'lightcoral')">Klik untuk ubah warna bg</button>
+  </div>
+
+</div>
+
+<script src="main.js"></script>
+
+</body>
+</html>
